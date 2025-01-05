@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link href="pages_secondaire.css" rel="stylesheet" type="text/css">
+  <head>
+
+<body>
+    <header> 
+
+        <nav>
+			     
+                
+				 <a href="perrine_goget.html" class="navig url"> Perrine Goget</a>
+				 <a href="index.html" class="navig url"> Réalisations</a>
+		
+		</nav>
+    </header>
+    <h1> 
+        Sites
+    </h1>
+<p>Mon premier site local, réalisé au lycée, dont le thème était : "Les informations inutiles". <br>
+<a href="https://hatterrine.github.io/informations_inutiles/index.html" id="link" class="url"> Voici un lien pour ce site !</a>
+</p>
+
+<div class="grille">
+	<div class="image-container" onclick="openModal(this)">
+        <img src="site_acc.png" alt="Page d'accueil">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="site_p6.png" alt="Page 6">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="site_p2.png" alt="Page 2">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="site_p5.png" alt="Page 5">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="site_p3.png" alt="Page 3">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="site_code_acc.png" alt="page du code de la page 1">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="site_code_p5.png" alt="page du code de la page 6">
+    </div>
+</div>
+
+
+
+
+
+<div class="modal"  onclick="closeModal()">
+    <img class="modal-image" src="">
+</div>
+<script>
+
+
+    function openModal(element) {
+        const modal = document.querySelector(".modal");
+        const modalImage = document.querySelector(".modal-image");
+        modalImage.src = element.querySelector('img').src;
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        const modal = document.querySelector(".modal");
+        modal.style.display = "none";
+    }
+</script>
+
+
+<footer id="footer"> © Créer par Perrine Goget. 
+    <a href="https://www.linkedin.com/in/perrine-goget-7090aa32b/"> 
+        <img src="link.png" alt="Logo de linkedIn" class="logo" id="linki">
+    </a> 
+    <img alt="logo de validation en css et html" class="logo" id="valide" src="validation.png">
+</footer>
+
+  </body>
+</html> 

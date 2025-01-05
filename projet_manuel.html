@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link href="pages_secondaire.css" rel="stylesheet" type="text/css">
+  <head>
+
+<body>
+    <header> 
+
+        <nav>
+			     
+                
+				 <a href="perrine_goget.html" class="navig url"> Perrine Goget</a>
+				 <a href="index.html" class="navig url"> Réalisations</a>
+		
+		</nav>
+    </header>
+    <h1> 
+        Projet Manuels
+    </h1>
+
+
+<p>
+Voici mon premier projet au fablab :
+</p>
+
+<div class="grille">
+	<div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_cartel.png" alt="Cartel de la boite à musique">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_cro3.jpg" alt="carnet page 1" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_cro1.jpg" alt="carnet page 2">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_cro2.jpg" alt="carnet page 3" class="portrait">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_b6.jpg" alt="construction avec l'atelier">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_b4.jpg" alt="interieur de la boite">
+    </div>
+</div>
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_b3.jpg" alt="exposition" class="portrait">
+    </div>
+
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_b2.jpg" alt="exposition vue 2" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_b1.jpg" alt="exposition vue 3" class="portrait">
+    </div>
+</div>
+
+<p>
+Je me suis beaucoup amusée à peindre la baie vitrée pour Noël.<br>  
+Créative, customiser des objets et créer des badges font partie de mes passe-temps.
+</p>
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_vitre1.jpg" alt="dessins des vitres sur papier">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_vitre3.jpg" alt="vitre droite" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_vitre2.jpg" alt="vitre gauche" class="portrait">
+    </div>
+</div>
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_sacoche.jpg" alt="sacoche eastpak" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_badge.jpg" alt="badges">
+    </div>
+</div>
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_maison4.jpg" alt="maison vue 3/4" class="portrait">
+    </div>
+
+    <div class="image-container" onclick="openModal(this)">
+        
+        <img src="pro_man_maison2.jpg" alt="mauson vue de face" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_maison3.jpg" alt="maison vue de coté" class="portrait">
+    </div>
+</div>
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_glass.jpg" alt="verre et plat">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="pro_man_boxypot.jpg" alt="boite et pot à crayons">
+    </div>
+</div>
+
+
+<div class="modal"  onclick="closeModal()">
+    <img class="modal-image" src="">
+</div>
+<script>
+
+
+    function openModal(element) {
+        const modal = document.querySelector(".modal");
+        const modalImage = document.querySelector(".modal-image");
+        modalImage.src = element.querySelector('img').src;
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        const modal = document.querySelector(".modal");
+        modal.style.display = "none";
+    }
+</script>
+
+
+<footer id="footer"> © Créer par Perrine Goget. 
+    <a href="https://www.linkedin.com/in/perrine-goget-7090aa32b/"> 
+        <img src="link.png" alt="Logo de linkedIn" class="logo" id="linki">
+    </a> 
+    <img alt="logo de validation en css et html" class="logo" id="valide" src="validation.png">
+</footer>
+
+  </body>
+</html> 

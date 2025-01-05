@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link href="pages_secondaire.css" rel="stylesheet" type="text/css">
+  <head>
+
+<body>
+    <header> 
+
+        <nav>
+			     
+                
+				 <a href="perrine_goget.html" class="navig url"> Perrine Goget</a>
+				 <a href="index.html" class="navig url"> Réalisations</a>
+		
+		</nav>
+    </header>
+    <h1> 
+        Mes Photos
+    </h1>
+<p>
+Quelques photos, sans oublier les photos prises sur le vif comme le grand bicycle<br> vu du bus ou encore le cheval avec sa frite !
+</p>
+
+<div class="grille">
+
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_biche.jpg" alt="Photo d'une biche" class="portrait" id="biche">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_7.jpg" alt="batiment à londre avec du soleil" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_10.jpg" alt="Poudlard">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_8.jpg" alt="Vélo 2 roue" class="portrait">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_9.jpg" alt="Big ben" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_5.jpg" alt="point violet" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_4.jpg" alt="fleur avec de la lumière" class="portrait">
+    </div>    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_3.jpg" alt="bout de rivière de bretagne" class="portrait">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_2.jpg" alt="rivière de bretagne">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_1.jpg" alt="transparence de l'eau de bretagne" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_6.jpg" alt="Picotie et Miléna (mes 2 poules)">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="photo_11.jpg" alt="Voleur (Un cheval qui tiens une frite) " class="portrait">
+    </div>
+</div>
+
+
+
+
+
+<div class="modal"  onclick="closeModal()">
+    <img class="modal-image" src="">
+</div>
+<script>
+
+
+    function openModal(element) {
+        const modal = document.querySelector(".modal");
+        const modalImage = document.querySelector(".modal-image");
+        modalImage.src = element.querySelector('img').src;
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        const modal = document.querySelector(".modal");
+        modal.style.display = "none";
+    }
+</script>
+
+
+<footer id="footer"> © Créer par Perrine Goget. 
+    <a href="https://www.linkedin.com/in/perrine-goget-7090aa32b/"> 
+        <img src="link.png" alt="Logo de linkedIn" class="logo" id="linki">
+    </a> 
+    <img alt="logo de validation en css et html" class="logo" id="valide" src="validation.png">
+</footer>
+  </body>
+</html> 

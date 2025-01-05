@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link href="pages_secondaire.css" rel="stylesheet" type="text/css">
+  <head>
+
+<body>
+    <header> 
+
+        <nav>
+			     
+                
+				 <a href="perrine_goget.html" class="navig url"> Perrine Goget</a>
+				 <a href="index.html" class="navig url"> Réalisations</a>
+		
+		</nav>
+    </header>
+    <h1> 
+        Illustrator
+    </h1>
+
+    <p> 
+        Mes premiers pas sur Illustrator: la création de mon propre logo, la création d'un personnage et pour m'amuser une affiche publicitaire de boîte à boisson et enfin un jeu de lumière.
+    </p>
+
+
+<div class="grille">
+	<div class="image-container" onclick="openModal(this)">
+        <img src="AI_logo_pap.jpg" alt="Mon logo sur papier." class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="baniere.png" alt="Ma bannière.">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="AI_mon_logo.jpg" alt="Mon logo finit" class="portrait">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="AI_navis.png" alt="La navis" class="navis">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="boite_a_boisson.jpg" alt="Les boites à boisson" class="portrait">
+    </div>
+</div>
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="AI_luz.png" alt="La lummière.">
+    </div>
+</div>
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_00.jpg" alt="La page de garde du fablab." >
+    </div>
+</div>
+
+<p>
+Un guide sur le Fablab des Gobelins réalisé avec Illustrator.
+</p>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_01.jpg" alt="Page 1" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_02.jpg" alt="Page 2" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_03.jpg" alt="Page 3" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_04.jpg" alt="Page 4" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_05.jpg" alt="Page 5" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_06.jpg" alt="Page 6" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_07.jpg" alt="Page 7" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_08.jpg" alt="Page 8" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_09.jpg" alt="Page 9" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_10.jpg" alt="Page 10" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_11.jpg" alt="Page 11" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_12.jpg" alt="Page 12" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_13.jpg" alt="Page 13" class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="guide_14.jpg" alt="Page 14" class="portrait">
+    </div>
+</div>
+
+
+
+
+
+<div class="modal"  onclick="closeModal()">
+    <img class="modal-image" src="">
+</div>
+<script>
+
+
+    function openModal(element) {
+        const modal = document.querySelector(".modal");
+        const modalImage = document.querySelector(".modal-image");
+        modalImage.src = element.querySelector('img').src;
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        const modal = document.querySelector(".modal");
+        modal.style.display = "none";
+    }
+</script>
+
+
+<footer id="footer"> © Créer par Perrine Goget. 
+    <a href="https://www.linkedin.com/in/perrine-goget-7090aa32b/"> 
+        <img src="link.png" alt="Logo de linkedIn" class="logo" id="linki">
+    </a> 
+    <img alt="logo de validation en css et html" class="logo" id="valide" src="validation.png">
+</footer>
+
+  </body>
+</html> 
