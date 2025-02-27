@@ -1,101 +1,74 @@
 <!DOCTYPE HTML>
 <html lang="fr">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<link href="pages_secondaire.css" rel="stylesheet" type="text/css">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link href="test.css" rel="stylesheet" type="text/css">
   <head>
 
 <body>
     <header> 
 
         <nav>
-			     
+                 
                 
-				 <a href="perrine_goget.html" class="navig url"> Perrine Goget</a>
-				 <a href="index.html" class="navig url"> Réalisations</a>
-                  <a href="gobelins.html" class="navig url"> Gobelins</a>
-		
-		</nav>
+                 <a href="perrine_goget.html" class="navig url"> Perrine</a>
+                 <a href="index.html" class="navig url"> Gobelins</a>
+                  <a href="gobelins.html" class="navig url"> Mes Réalisations</a>
+        
+        </nav>
     </header>
-    <h1> 
-        Projets Gobelins
+    <h1 id="page_projet"> 
+        Mes réalisations
     </h1>
 
 
-<p>
-Voici mon premier projet au fablab :
-</p>
 
-<div class="grille">
-	<div class="image-container" onclick="openModal(this)">
-        <img src="image/pro_man_cartel.png" alt="Cartel de la boite à musique">
+<div class="gallery">
+        
+        
+            
+            
+             <a href="photos.html" class="superposer droite"> Mes photos → </a>
+            <img src="image/photo_10.jpg" alt="Poudlard" class="monImage">
+           
+            <img src="./image/dess_im_maomao_aqua.jpg" alt="Mao Mao avec une branche de nénuphar." class=" monImage">
+            <a href="dessins.html" class="superposer"> ← Mes dessins</a>
+            
+            <a href="projet_manuel.html" class="superposer droite"> Mes projets manuels → </a>
+            <img src="image/pro_man_vitre2.jpg" alt="vitre gauche" class=" monImage">
+
+
+            <img src="image/PS_fantome.jpg" alt="Ma soeur et mon chien sous la forme de fantomes" class=" monImage">
+            <a href="photoshop.html" class="superposer"> ← Photoshop </a>
+
+
+
+    
+
     </div>
+
+<div id="grille">
+    
 </div>
 
 
 
-<div class="grille">
-    <div class="image-container" onclick="openModal(this)">
-        <img src="image/pro_man_cro3.jpg" alt="carnet page 1" class="portrait">
-    </div>
-    <div class="image-container" onclick="openModal(this)">
-        <img src="image/pro_man_cro1.jpg" alt="carnet page 2">
-    </div>
-    <div class="image-container" onclick="openModal(this)">
-        <img src="image/pro_man_cro2.jpg" alt="carnet page 3" class="portrait">
-    </div>
-</div>
 
 
 
-<div class="grille">
-    <div class="image-container" onclick="openModal(this)">
-        <img src="image/pro_man_b6.jpg" alt="construction avec l'atelier">
-    </div>
-    <div class="image-container" onclick="openModal(this)">
-        <img src="image/pro_man_b4.jpg" alt="interieur de la boite">
-    </div>
-</div>
-<div class="grille">
-    <div class="image-container" onclick="openModal(this)">
-        <img src="image/pro_man_b3.jpg" alt="exposition" class="portrait">
-    </div>
-
-    <div class="image-container" onclick="openModal(this)">
-        <img src="image/pro_man_b2.jpg" alt="exposition vue 2" class="portrait">
-    </div>
-    <div class="image-container" onclick="openModal(this)">
-        <img src="image/pro_man_b1.jpg" alt="exposition vue 3" class="portrait">
-    </div>
-</div>
 
 
 
-<div class="modal"  onclick="closeModal()">
-    <img class="modal-image" src="">
-</div>
-<script>
 
-
-    function openModal(element) {
-        const modal = document.querySelector(".modal");
-        const modalImage = document.querySelector(".modal-image");
-        modalImage.src = element.querySelector('img').src;
-        modal.style.display = "flex";
-    }
-
-    function closeModal() {
-        const modal = document.querySelector(".modal");
-        modal.style.display = "none";
-    }
-</script>
-
-
-<footer id="footer"> © Créer par Perrine Goget. 
+<footer id="footer_projet"> © Créer par Perrine Goget. 
     <a href="https://www.linkedin.com/in/perrine-goget-7090aa32b/"> 
         <img src="image/link.png" alt="Logo de linkedIn" class="logo" id="linki">
     </a> 
 </footer>
-
   </body>
 </html> 
+
+
+
+
+
