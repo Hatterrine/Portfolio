@@ -18,14 +18,105 @@
 		</nav>
     </header>
     <h1> 
-        Cours de dessins
+        dessins
     </h1>
+    <h2> 
+        Mes dessins d'imagination
+    </h2>
+
+
+    
+<div class="scrolldiv">
+    <div class="image_scroll">
+        <img src="" class="pepinette">
+    </div>
+    <div class="items_scroll">
+        <span class="ancreee"> mes projets personnels</span>
+    </div> 
+    <div class="items_scroll">
+        <span class="ancreee"> mes projets personnels</span>
+    </div> 
+    <div class="buttoncacher">
+        <button class="cunbouton" type="button"> Cacher</button>
+    </div>
+</div>
+
+
+
+<div class="grille">
+	<div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_mer.jpg" alt="Mer de bretagne à l'aquarelle.">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_village.jpg" alt="village de bretagne">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_lac.jpg" alt="Rivière de bretagne.">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_maomao.jpg" alt="dessin de mao mao au fusain" class="navis">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_maomao_aqua.jpg" alt="dessin de mao mao a l'aquarelle.">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_hermione.jpg" alt="Hermione Granger au crayon à papier." class="navis">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_klee.jpg" alt="dessin de klee à l'aquarelle." class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_jane.jpg" alt="dessin de Jane à l'aquarelle." class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_clo.jpg" alt="dessin de Clo à l'aquarelle." class="portrait">
+    </div>
+</div>
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_arbre.jpg" alt="dessin d'un arbre." class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_mimikyu.jpg" alt="dessin de Mimikyu." class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_vanessa.jpg" alt="dessin de Vanessa." class="portrait">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_conductor.jpg" alt="dessin de Conductor." class="portrait">
+    </div>
+</div>
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_cro_A.jpg" alt="Croquis de la letterrine A'" class="navis">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dess_im_A.jpg" alt="Letterrine A à l'aquarelle." class="portrait">
+    </div>
+</div>
+<h2> 
+       Cours de dessins
+    </h2>
+
 <p>
 J'ai pris des cours de dessins au sein de l'association ADAMM avec Martyne Maillard.
 </p>
 
 <div class="grille">
-	<div class="image-container" onclick="openModal(this)">
+    <div class="image-container" onclick="openModal(this)">
         <img src="image/dessin_7.jpg" alt="fille crayon a papier">
     </div>
     <div class="image-container" onclick="openModal(this)">
@@ -65,8 +156,7 @@ J'ai pris des cours de dessins au sein de l'association ADAMM avec Martyne Maill
 </div>
 
 
-
-
+    
 
 <div class="modal"  onclick="closeModal()">
     <img class="modal-image" src="">
@@ -78,8 +168,7 @@ J'ai pris des cours de dessins au sein de l'association ADAMM avec Martyne Maill
         const modal = document.querySelector(".modal");
         const modalImage = document.querySelector(".modal-image");
         modalImage.src = element.querySelector('img').src;
-        modal.style.display = "flex";
-    }
+        modal.style.display = "flex";    }
 
     function closeModal() {
         const modal = document.querySelector(".modal");
@@ -93,6 +182,5 @@ J'ai pris des cours de dessins au sein de l'association ADAMM avec Martyne Maill
         <img src="image/link.png" alt="Logo de linkedIn" class="logo" id="linki">
     </a> 
 </footer>
-
   </body>
 </html> 

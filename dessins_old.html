@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link href="pages_secondaire.css" rel="stylesheet" type="text/css">
+  <head>
+
+<body>
+    <header> 
+
+        <nav>
+			     
+                
+				 <a href="perrine_goget.html" class="navig url"> Perrine Goget</a>
+				 <a href="index.html" class="navig url"> Réalisations</a>
+                  <a href="gobelins.html" class="navig url"> Gobelins</a>
+		
+		</nav>
+    </header>
+    <h1> 
+        Cours de dessins
+    </h1>
+<p>
+J'ai pris des cours de dessins au sein de l'association ADAMM avec Martyne Maillard.
+</p>
+
+<div class="grille">
+	<div class="image-container" onclick="openModal(this)">
+        <img src="image/dessin_7.jpg" alt="fille crayon a papier">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dessin_6.jpg" alt="test yeux et nez au crayon à papier">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dessin_10.jpg" alt="Récipient à la sanguine">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dessin_9.jpg" alt=" Le jouet à la sanguine">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dessin_5.jpg" alt="Statue à la sanguine" class="navis">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dessin_4.jpg" alt="Poisson au fusain">
+    </div>
+</div>
+
+
+
+<div class="grille">
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dessin_3.jpg" alt="Lapin au crayon à papier">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dessin_8.jpg" alt="mouette au crayon à papier">
+    </div>
+    <div class="image-container" onclick="openModal(this)">
+        <img src="image/dessin_2.jpg" alt="buste au crayon à papier (finit)" class="navis">
+    </div>
+</div>
+
+
+
+
+
+<div class="modal"  onclick="closeModal()">
+    <img class="modal-image" src="">
+</div>
+<script>
+
+
+    function openModal(element) {
+        const modal = document.querySelector(".modal");
+        const modalImage = document.querySelector(".modal-image");
+        modalImage.src = element.querySelector('img').src;
+        modal.style.display = "flex";
+    }
+
+    function closeModal() {
+        const modal = document.querySelector(".modal");
+        modal.style.display = "none";
+    }
+</script>
+
+
+<footer id="footer"> © Créer par Perrine Goget. 
+    <a href="https://www.linkedin.com/in/perrine-goget-7090aa32b/"> 
+        <img src="image/link.png" alt="Logo de linkedIn" class="logo" id="linki">
+    </a> 
+</footer>
+
+  </body>
+</html> 
