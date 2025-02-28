@@ -98,6 +98,13 @@ h1 {
     color: rgb(48, 11, 97);
 }
 
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(48, 11, 97);
+}
+
+
 #page_projet {
     left: 400px;
 }
