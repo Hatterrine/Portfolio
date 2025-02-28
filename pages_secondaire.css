@@ -206,7 +206,7 @@ p {
 
 
 
-span{
+.videos{
   display: flex;
   justify-content: center;
 }
