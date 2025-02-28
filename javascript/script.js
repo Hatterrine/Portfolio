@@ -1,12 +1,12 @@
+// Sélection de la vidéo
 let video = document.getElementById("myvideo");
 
-        function playLoop() {
-            video.loop = true; // Active la lecture en boucle
-            video.play(); // Joue la vidéo
-        }
+// Ajoute un écouteur d'événement pour détecter quand la vidéo commence
+video.addEventListener("play", function() {
+    video.loop = true; // Active la boucle lorsque la vidéo est lancée
+});
 
-        function stopLoop() {
-            video.loop = false; // Désactive la lecture en boucle
-            video.pause(); // Met la vidéo en pause
-            video.currentTime = 0; // Remet la vidéo au début
-        }
+// Ajoute un écouteur d'événement pour détecter quand la vidéo est mise en pause
+video.addEventListener("pause", function() {
+    video.loop = false; // Désactive la boucle lorsque la vidéo est mise en pause
+});
