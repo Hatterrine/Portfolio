@@ -193,6 +193,19 @@ p {
             height: auto;
         }
 
+
+        .modal #gourde {
+            width: 100vw;
+            height: auto;
+        }
+
+        .modal #dague {
+            width: 100vw;
+            height: auto;
+        }
+
+
+
 video { 
     max-width: 50rem;
     margin: 10px;
