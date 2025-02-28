@@ -170,7 +170,11 @@ p {
             width: 250px;
         }
         .blen {
-            width : 450px
+            width : 450px;
+        }
+
+        .petit {
+            width: 500px;
         }
 
         img:hover {
