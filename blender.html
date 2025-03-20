@@ -33,12 +33,22 @@ Le thème était le Memphis Art.
 <div class="grille">
     <div class="image-container" onclick="openModal(this)">
         <img id="gourde" src="image/blend_gourde.png" alt="Gourde" class="blen">
+          <h1>Gourde</h1>
+        <h2>Objet Blender</h2>
+        <div class="description_modal">
+        <p>Une modélisation simple d'une gourde.</p>
     </div>
     <div class="image-container" onclick="openModal(this)">
         <img  src="image/blend_apple.png" alt="pomme" class="navis">
+        <h1>Un pomme</h1>
+        <h2>Objet Blender</h2>
+        <p>Une modélisation d'une pomme.</p>
     </div>
     <div class="image-container" onclick="openModal(this)">
         <img id="dague" src="image/blend_dague.png" alt="dague" class="blen">
+        <h1>Dague</h1>
+        <h2>Objet Blender</h2>
+        <p>La création d'une dague.</p>
     </div>
 </div>
 
@@ -57,24 +67,41 @@ Une petite animation réalisée grâce à mon auto-formation sur blender.
 
 
 <div class="modal"  onclick="closeModal()">
+    <h1 class="titre" ></h1>
+    <h2 class="item"></h2>
     <img class="modal-image" src="">
+    <p class="description"></p>
 </div>
 <script>
 
 
-    function openModal(element) {
-        const modal = document.querySelector(".modal");
-        const modalImage = document.querySelector(".modal-image");
-        modalImage.src = element.querySelector('img').src;
-        modal.style.display = "flex";
-    }
+  function openModal(element) {
+    const modal = document.querySelector(".modal");
+    const modalImage = document.querySelector(".modal-image");
+    const nom_projet = document.querySelector(".titre");
+    const items = document.querySelector(".item");
+    const descr = document.querySelector(".description");
 
-    function closeModal() {
-        const modal = document.querySelector(".modal");
-        modal.style.display = "none";
-    }
+    // On récupère les infos cachées dans la div cliquée
+    const img = element.querySelector('img');
+    const h1 = element.querySelector('h1');
+    const h2 = element.querySelector('h2');
+    const p = element.querySelector('p');
 
+    // On met à jour la modal avec ces infos
+    modalImage.src = img.src;
+    nom_projet.textContent = h1 ? h1.textContent : "";
+    items.textContent = h2 ? h2.textContent : "";
+    descr.textContent = p ? p.textContent : "";
 
+    // On affiche la modal
+    modal.style.display = "flex";
+}
+
+function closeModal() {
+    const modal = document.querySelector(".modal");
+    modal.style.display = "none";
+}
 src="javascript/script.js"
 
 </script>

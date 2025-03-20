@@ -180,6 +180,20 @@ p {
         img:hover {
             transform: scale(1.05);
         }
+
+
+
+        .image-container h1,
+        .image-container h2,
+        .image-container p {
+                                display: none; /* Cache les textes par défaut */
+                            }
+
+        .description_modal {
+            background-color: white;
+        }
+
+
         .modal {
             display: none;
             position: fixed;
