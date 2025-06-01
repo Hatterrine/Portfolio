@@ -15,7 +15,9 @@
 }/*Pour tout les élément je retire les marges et le padding*/
 
 body {
-    background-color: rgb(236, 208, 249);
+    background-color: rgb(251 248 255);
+
+
 }/*Pour le corps je mes la couleurs de font*/
 
 
@@ -35,16 +37,10 @@ header {
 
 
 nav {
-    background-image: url("image/baniere.png");
-    background-repeat: repeat-x;
-    background-size: 35%, 25%, 25%;
-    background-position-y: 20px ;
     width:100%;
     height:15rem;
     display:flex;
     justify-content:center;
-    padding: 0;
-    gap: 0px;
 } /* Dans la balise nav: je met l'image de ma bannière que je fait répéter sur l'axe x.  */
 /* L'image fera partie du background et je lui donne une taille et je la positionne à 20 pixels sur l'axe y  */
 /* Je dimentionne le tout  */
@@ -55,7 +51,8 @@ nav {
     height:3rem;
     display: inline;
     scroll-padding-bottom: 0px;
-    margin: 150px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
+    font-family: 'Montserrat';
     font-size: 3em;
     color: rgb(48, 11, 97);
     font-weight: bold;
@@ -147,6 +144,8 @@ nav {
 /**********************************************************************************/
 
 h1 {
+  font-family: 'Monsterrat', sans-serif;
+
     margin: 100px;
     text-align: center;
     font-size: 70px;
@@ -171,79 +170,70 @@ h1 {
 }
 
 
+
 /**********************************************************************************/
 /*                  V La grille de la page des projets                            */
 /**********************************************************************************/
 
 
 
+    .container {
+    box-sizing: border-box;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 60px 40px 40px;
+    }
 
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
 
-.gallery {
-/*  --s: 185px; /* control the size */
-    --s: calc(minmax(150px,30vw)/2); /* control the size */
-  --g: 10px;  /* control the gap */
-  --f: 1.5;   /* control the scale factor */
-  display: grid;
-  gap: var(--g);
-/*  width: calc(17*var(--s) + 1*var(--g));*/
-  grid-template-columns: repeat(4,auto);
-  overflow: hidden;
-}
+    .card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+    }
 
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
 
+    .card:hover img {
+      transform: scale(1.1);
+    }
 
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      color: white;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      transition: opacity 0.4s ease;
+    }
 
-.gallery > .monImage {
-    display: block;
-  width: 185px;
-  height: 350px;
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  cursor: pointer;
-  filter: grayscale(80%);
-  transition: .35s linear;
-}
+    .card:hover .overlay {
+      opacity: 1;
+    }
 
-.gallery .monImage:hover{
-  filter: grayscale(0);
-  width:  300px;
-  height:  200px;
-
-}
-
-
-#grille {
-  margin: 0;
-  display: grid;}
-
-
-
-
-
-.superposer {
-    font-size: max(16pt,2.2vw);
-    color: rgb(48, 11, 97);
-    margin: auto 0;
-    font-weight: bold;
-    object-fit: cover;
-}
-
-.droite {
-    text-align: right;
-}
-
-
-video {
-  width: 185px;
-  height: 350px;
-  min-height: 100%;
-  min-width: 100%;  
-}
-
-
-
+    .overlay h3 {
+        font-family: "Jersey 10";
+      font-size: 4rem;
+      font-weight: bold;
+    }
 
 
 
