@@ -29,7 +29,7 @@ body {
 
 
 header {
-    background-color: rgb(206, 230, 237) ;
+    background-color: rgb(11 12 74) ;
     display: flex;
 }/* Dans le header je met une couleur de fond et mon display flex (pour m'assurer que les éléments fils directs seront alignés sur une ligne) */
 
@@ -54,19 +54,17 @@ nav {
     margin: 50px 0px 0px 0px;
     font-family: 'Montserrat';
     font-size: 3em;
-    color: rgb(48, 11, 97);
+    color: white;
     font-weight: bold;
 }/* Dans les balises de class navig ()   */
   
+
 .url {
     
     text-decoration: none;
-    background: 
-      conic-gradient(#c785e9d2 0 0) no-repeat
-       calc(200% - var(--p,0%)) 100% / 200% var(--p,.08em);
+    background: conic-gradient(#a8a8fef7 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, .08em);
     transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
 }
-
 
 
 
@@ -230,9 +228,11 @@ h1 {
     }
 
     .overlay h3 {
-        font-family: "Jersey 10";
-      font-size: 4rem;
-      font-weight: bold;
+        font-family: "Montserrat";
+      font-size: 3rem;
+      font-weight: black;
+      font-style: italic;
+      text-align: center;
     }
 
 
@@ -242,21 +242,30 @@ h1 {
 /**********************************************************************************/
 #footer_perrine{
      
-    background-color: rgba(238,250,252,0.6) ;
+     background-color: rgb(11 12 74) ;
     margin-top: 40vh;
     padding-left:10px ;
     display: flex;
     align-items: center;
     align-content: center;
+    font-family: 'Montserrat';
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
  }
 
 #footer_projet{
-background-color: rgba(238, 250, 252, 0.6);
+ background-color: rgb(11 12 74);
     margin-top: 20vh;
     padding-left: 10px;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     align-content: center;
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -264,6 +273,9 @@ background-color: rgba(238, 250, 252, 0.6);
 #linki {
 width: 50px;
 min-width: 3%;
+background-color: white;
+border-radius: 10px;
+margin-left: 1rem
 }
 
 
