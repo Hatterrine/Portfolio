@@ -1,26 +1,28 @@
- // Remplace ces chemins par tes vraies images !
+   // Remplace ces chemins par tes vraies images !
     const pages = [
-      'image/CD/PAGE_1.png', // Couverture (page 1) - droite seule au début
-      'image/CD/PAGE_2.png', // Page 2 (gauche)
-      'image/CD/PAGE_3.png', // Page 3 (droite)
-      'image/CD/PAGE_4.png', // Page 4 (gauche)
-      'image/CD/PAGE_5.png', // Page 5 (gauche)
-      'image/CD/PAGE_6.png', // Page 6 (gauche)
-      'image/CD/PAGE_7.png', // Page 7 (gauche)
-      'image/CD/PAGE_8.png'  // Quatrième de couverture (gauche seule à la fin)
+      'image/guide/guide_00.jpg',
+      'image/guide/guide_01.jpg',
+      'image/guide/guide_02.jpg',
+      'image/guide/guide_03.jpg',
+      'image/guide/guide_04.jpg',
+      'image/guide/guide_05.jpg',
+      'image/guide/guide_06.jpg',
+      'image/guide/guide_07.jpg',
+      'image/guide/guide_08.jpg',
+      'image/guide/guide_09.jpg',
+      'image/guide/guide_10.jpg',
+      'image/guide/guide_11.jpg',
+      'image/guide/guide_12.jpg',
+      'image/guide/guide_13.jpg',
+      'image/guide/guide_14.jpg'
     ];
 
-      // Les indices de "double page" sont : [1,2], [3,4], [5,6]
+    // Indices pour le flipbook (page seule, paires, page seule)
+    let flipIndexes = [0];
+    for(let i=1; i<pages.length-1; i+=2) { flipIndexes.push(i); }
+    flipIndexes.push(pages.length-1);
 
-    // index = 0 => page de droite seule (page 1)
-    // index = 1 => [page 2 gauche, page 3 droite]
-    // index = 3 => [page 4 gauche, page 5 droite]
-    // index = 5 => [page 6 gauche, page 7 droite]
-    // index = 7 => page de gauche seule (page 8)
-
-    // index prend les valeurs 0, 1, 3, 5, 7
-    const flipIndexes = [0, 1, 3, 5, 7];
-    let indexPos = 0; // position dans flipIndexes
+    let indexPos = 0;
 
     const staticPages = document.getElementById("staticPages");
     const book = document.getElementById("book");
@@ -43,18 +45,14 @@
     function updateStaticPages() {
       staticPages.innerHTML = "";
       const idx = flipIndexes[indexPos];
-      // Début : page 1 seule à droite
       if (idx === 0) {
         staticPages.appendChild(renderStaticPage("left", "", true));
         staticPages.appendChild(renderStaticPage("right", pages[0]));
       }
-      // Fin : page 8 seule à gauche
-      else if (idx === 7) {
-        staticPages.appendChild(renderStaticPage("left", pages[7]));
+      else if (idx === pages.length - 1) {
+        staticPages.appendChild(renderStaticPage("left", pages[idx]));
         staticPages.appendChild(renderStaticPage("right", "", true));
-      }
-      // Pages paires du milieu
-      else {
+      } else {
         staticPages.appendChild(renderStaticPage("left", pages[idx]));
         staticPages.appendChild(renderStaticPage("right", pages[idx+1]));
       }
@@ -65,20 +63,16 @@
     function turnPage(forward = true) {
       let turningContent, turningClass;
       const idx = flipIndexes[indexPos];
-      // Animation page tournante (uniquement quand double pages)
-      if (forward && idx !== 0 && idx !== 7) {
-        // tourner la page de droite
+      if (forward && idx !== 0 && idx !== pages.length - 1) {
         turningContent = pages[idx+1];
         turningClass = "turning-page turning";
-      } else if (!forward && idx !== 0 && idx !== 7) {
-        // tourner la page de gauche
+      } else if (!forward && idx !== 0 && idx !== pages.length - 1) {
         turningContent = pages[idx];
         turningClass = "turning-page left turning-reverse";
       } else {
         turningContent = null;
         turningClass = null;
       }
-
       let turning;
       if (turningClass) {
         turning = document.createElement("div");
@@ -114,7 +108,6 @@
     // Init
     updateStaticPages();
 
-    // Bonus : adapt height on orientation change
     window.addEventListener('resize', () => {
       updateStaticPages();
     });

@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<link href="css/guide.css" rel="stylesheet" type="text/css">
-        <link href="css/livre.css" rel="stylesheet" type="text/css">
+        <link href="css/livre_guide.css" rel="stylesheet" type="text/css">
   <head>
 
 <body>
@@ -25,87 +25,23 @@ Un guide sur le Fablab des Gobelins réalisé avec Illustrator.
 
 
 
-<div class="grille">
-	<div class="image-container" onclick="openModal(this)">
-        <img class= "grande" src="image/CD/Digipack_Mockup_4.png" alt="Mockup du cd.">
-    </div>
-</div>
-
-<div class="mon_texte">
-    <p>L'image du font assemblé entièrement via Photoshop et la pochette avec le texte à été faite via Indesign.
-    </p>
-</div>
-
-
-<div class="grille">
-    <div class="image-container" onclick="openModal(this)">
-        <img class= "grande" src="image/CD/DESSUS_ENTIER.png" alt="dessus du cd.">
-    </div>
-
-</div>
-
-
-
-<div class="grille">
-       <div class="image-container" onclick="openModal(this)">
-        <img src="image/CD/COUVERTURE.png" alt="dessin de mao mao a l'aquarelle.">
-    </div>
-    <div class="image-container" onclick="openModal(this)">
-        <img src="image/CD/MILLIEU.png" alt="Hermione Granger au crayon à papier." >
-    </div>
-        <div class="image-container" onclick="openModal(this)">
-        <img src="image/CD/LAST_COUVERTURE.png" alt="Hermione Granger au crayon à papier." >
-    </div>
-</div>
-
-<div class="mon_texte">
-    <p>J'ai découper la pochette avec un scalpel afin de garder les petits détails des 2 personnages.
-    </p>
-</div>
-
-<div class="grille">
-    <div class="image-container" onclick="openModal(this)">
-        <img class= "grande" src="image/CD/INT.png" alt="dessus du cd.">
-    </div>
-
-</div>
-
-
-
-<div class="grille">
-        <div class="image-container" onclick="openModal(this)">
-        <img src="image/CD/INT_POCHETTE_DROITE.png" alt="Hermione Granger au crayon à papier." >
-    </div>
-       <div class="image-container" onclick="openModal(this)">
-        <img src="image/CD/INT_POCHETTE_GAUCHE.png" alt="dessin de mao mao a l'aquarelle.">
-    </div>
-
-
-</div>
-
-<div class="modal"  onclick="closeModal()">
-    <img class="modal-image" src="">
-</div>
-
-<div class="mon_texte">
-    <p>Avec le livret créer via Indesign.
-    </p>
-</div>
-
 <div class="conteuneur_livre">
   <div class="book-container">
-    <button id="prev-btn">⟸ Précédent</button>
-    <button id="next-btn">Suivant ⟹</button>
     <div class="book" id="book">
+
       <div class="page-stack" id="staticPages"></div>
       <!-- La page qui tourne sera rajoutée dynamiquement -->
     </div>
+
   </div>
   </div>
+  <div id="bouton">
+                  <button id="prev-btn">⟸ Précédent</button>
+    <button id="next-btn">Suivant ⟹</button>
+
+</div>
 
 
-
-<script src="javascript/open_modal.js"></script>
 <script src="javascript/livre_guide.js"></script>
 
 <footer id="footer"> © Créer par Perrine Goget. 
