@@ -1,0 +1,278 @@
+/***********************************************************************************/
+/*                                                                                 */
+/*                                    LE CSS                                       */
+/*                                                                                 */
+/*                             I La base de mes pages                              */
+/***********************************************************************************/
+
+
+/* Le bas de la page  */
+
+*{
+    margin: 0%;
+    padding: 0%;
+}/*Pour tout les élément je retire les marges et le padding*/
+
+body {
+    background-color: rgb(251 248 255);
+
+
+}/*Pour le corps je mes la couleurs de font*/
+
+
+
+/*************************************************************/
+/* II La barre de Navigation du Haut (le bandeau de la page) */
+/*************************************************************/
+
+
+
+header {
+    background-color: rgb(11 12 74) ;
+    display: flex;
+}/* Dans le header je met une couleur de fond et mon display flex (pour m'assurer que les éléments fils directs seront alignés sur une ligne) */
+
+
+
+
+nav {
+    width:100%;
+    height:15rem;
+    display:flex;
+    justify-content:center;
+} /* Dans la balise nav: je met l'image de ma bannière que je fait répéter sur l'axe x.  */
+/* L'image fera partie du background et je lui donne une taille et je la positionne à 20 pixels sur l'axe y  */
+/* Je dimentionne le tout  */
+
+.navig{
+    background-color: rgba(238,250,252,0.6);
+    padding: 30px;
+    height:3rem;
+    display: inline;
+    scroll-padding-bottom: 0px;
+    margin: 50px 0px 0px 0px;
+    font-family: 'Montserrat';
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+}/* Dans les balises de class navig ()   */
+  
+
+.url {
+    
+    text-decoration: none;
+    background: conic-gradient(#a8a8fef7 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, .08em);
+    transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+}
+
+
+
+.url:hover
+{
+    --p: 100%;
+    --t: .3s;
+    color : rgb(40, 27, 53);
+} 
+
+/**********************************************************************************/
+/*                  III Le texte des pages                                        */
+/**********************************************************************************/
+
+h1 {
+    margin: 100px 0px 100px 0px;
+    text-align: center;
+    font-size: 70px;
+    color: rgb(48, 11, 97);
+    font-family: "Montserrat";
+}
+
+h2 {
+    margin: 50px 0px 50px 0px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(48, 11, 97);
+    font-family: "Montserrat";
+}
+
+
+#page_projet {
+    left: 400px;
+}
+
+
+.presentationp1 {
+    max-width: 700px;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    font-size: 50px;
+    top: 500px;
+    left: 650px;
+    font-size: 35px;
+}
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Montserrat";
+}
+
+.mon_texte {
+    padding-top: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 5rem;
+}
+/**********************************************************************************/
+/*                  IV La grille des pages                                        */
+/**********************************************************************************/
+
+.grille {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .image-container {
+            margin: 10px;
+            cursor: pointer;
+            display: inline-block;
+            
+        }
+
+        .grande {
+            width: 1000px !important;
+        } 
+
+
+        img:not(.i) {
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+
+
+
+        img:hover:not(.i) {
+            transform: scale(1.05);
+        }
+
+
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .modal img {
+            width: 40vw;
+            height: auto;
+        }
+       .modal img.grande {
+  width: 80vw !important;
+  max-width: 100vw !important;
+  min-width: 0 !important;
+}
+
+
+        .modal #gourde {
+            width: 100vw;
+            height: auto;
+        }
+
+        .modal #dague {
+            width: 100vw;
+            height: auto;
+        }
+
+
+
+.videos{
+  display: flex;
+  justify-content: center;
+}
+
+video { 
+    max-width: 50rem;
+    margin: 10px;
+ }
+
+ .parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+ }
+
+ 
+
+/**********************************************************************************/
+/*                                   VI Le footer                                 */
+/**********************************************************************************/
+
+
+#footer{
+ background-color: rgb(11 12 74);
+    margin-top: 20vh;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+#linki {
+width: 50px;
+min-width: 3%;
+background-color: white;
+border-radius: 10px;
+margin-left: 1rem
+}
+
+
+
+
+/**********************************************************************************/
+/*                                  VII barre de scroll                           */
+/**********************************************************************************/
+
+
+.scrolldiv {
+    position : fixed ;
+}
+
+
+
+/**********************************************************************************/
+/*                                  VIII Livre                           */
+/**********************************************************************************/
+
+
+
+

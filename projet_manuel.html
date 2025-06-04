@@ -2,7 +2,10 @@
 <html lang="fr">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<link href="pages_secondaire.css" rel="stylesheet" type="text/css">
+		<link href="css/manuels.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <head>
 
 <body>
@@ -72,21 +75,7 @@ Créative, customiser des objets et créer des badges font partie de mes passe-t
 <div class="modal"  onclick="closeModal()">
     <img class="modal-image" src="">
 </div>
-<script>
-
-
-    function openModal(element) {
-        const modal = document.querySelector(".modal");
-        const modalImage = document.querySelector(".modal-image");
-        modalImage.src = element.querySelector('img').src;
-        modal.style.display = "flex";
-    }
-
-    function closeModal() {
-        const modal = document.querySelector(".modal");
-        modal.style.display = "none";
-    }
-</script>
+<script src="javascript/open_modal.js"></script>
 
 
 <footer id="footer"> © Créer par Perrine Goget. 
