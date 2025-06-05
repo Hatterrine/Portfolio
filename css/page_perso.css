@@ -52,7 +52,7 @@ nav {
     display: inline;
     scroll-padding-bottom: 0px;
     margin: 50px 0px 0px 0px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',  Arial, sans-serif;
     font-size: 3em;
     color: white;
     font-weight: bold;
@@ -142,7 +142,7 @@ nav {
 /**********************************************************************************/
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat',  Arial, sans-serif;
 
     margin: 100px;
     text-align: center;
@@ -230,7 +230,7 @@ h1 {
     }
 
     .overlay h3 {
-        font-family: "Montserrat";
+        font-family: "Montserrat",  Arial, sans-serif;
       font-size: 3rem;
       font-weight: black;
       font-style: italic;
@@ -252,7 +252,7 @@ h1 {
     display: flex;
     align-items: center;
     align-content: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',  Arial, sans-serif;
     font-size: 3em;
     color: white;
     font-weight: bold;
@@ -266,7 +266,7 @@ h1 {
     display: flex;
     align-items: center;
     align-content: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',  Arial, sans-serif;
     font-size: 1.5em;
     color: white;
     font-weight: bold;

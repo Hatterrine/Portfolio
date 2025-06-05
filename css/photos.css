@@ -51,7 +51,7 @@ nav {
     display: inline;
     scroll-padding-bottom: 0px;
     margin: 50px 0px 0px 0px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',  Arial, sans-serif;
     font-size: 3em;
     color: white;
     font-weight: bold;
@@ -83,7 +83,7 @@ h1 {
     text-align: center;
     font-size: 70px;
     color: rgb(48, 11, 97);
-    font-family: "Montserrat";
+    font-family: "Montserrat",  Arial, sans-serif;
 }
 
 h2 {
@@ -91,7 +91,7 @@ h2 {
     text-align: center;
     font-size: 40px;
     color: rgb(48, 11, 97);
-    font-family: "Montserrat";
+    font-family: "Montserrat",  Arial, sans-serif;
 }
 
 
@@ -121,7 +121,7 @@ p {
     unicode-bidi: isolate;
     font-size: 35px;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: "Montserrat",  Arial, sans-serif;
 }
 
 .mon_texte {
@@ -157,6 +157,16 @@ p {
             height: auto;
             border-radius: 8px;
             transition: transform 0.2s;
+            object-fit: cover;
+            aspect-ratio: 1/1;
+        }
+
+        .portrait_ph:not(.i){
+            aspect-ratio: 9/16;
+        }
+
+        .paysage:not(.i){
+            aspect-ratio: 16/9;
         }
 
 
@@ -179,6 +189,7 @@ p {
             background-color: rgba(0, 0, 0, 0.8);
             justify-content: center;
             align-items: center;
+            aspect-ratio: auto;
         }
 
 
@@ -239,7 +250,7 @@ video {
     display: flex;
     align-items: center;
     align-content: center;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',  Arial, sans-serif;
     font-size: 1.5em;
     color: white;
     font-weight: bold;
