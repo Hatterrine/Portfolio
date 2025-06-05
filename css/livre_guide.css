@@ -3,7 +3,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family:  "Montserrat",Arial, sans-serif;
+      font-family: sans-serif;
       margin: 0;
     }
        .book-container {
@@ -21,9 +21,9 @@
     .book {
       /* Ratio de deux pages A4 côte à côte: (596*2)x842 = 1192x842 */
       width: min(98vw, calc(98vh * 1192 / 842));
-      height: 80vh;
+      height: 98vh;
       max-width: 200vw;
-      max-height: 80vh;
+      max-height: 98vh;
       min-width: 320px;
       min-height: 200px;
       position: relative;
@@ -44,17 +44,21 @@
       width: 50%;
       height: 100%;
       overflow: hidden;
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(50,40,20,0.12);
       border-radius: 20px 0 0 20px;
       position: relative;
       z-index: 1;
       display: flex;
       align-items: center;
       justify-content: center;
+      border-right: 1px solid #ece3c3;
       transition: background 0.4s;
       padding: 0;
     }
     .static-page.right {
       border-radius: 0 20px 20px 0;
+      border-left: 1px solid #ece3c3;
       border-right: none;
     }
     .static-page.empty {
@@ -127,6 +131,7 @@
     .hidden { visibility: hidden; pointer-events: none; }
 
 #bouton {
+  margin-top: 4rem;
   margin-left: 30rem;
   padding-left: 17rem;
 }

@@ -1,20 +1,20 @@
-<!DOCTYPE HTML>
+
 <html lang="fr">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<link href="css/guide.css" rel="stylesheet" type="text/css">
-        <link href="css/livre_guide.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="css/guide.css" rel="stylesheet" type="text/css">
+        <link href="css/livre.css" rel="stylesheet" type="text/css">
   <head>
 
 <body>
-    <header> 
+  <header> 
 
         <nav>
-			     
+           
                   <a href="index.html" class="navig url"> Home</a>
                  <a href="pro.html" class="navig url"> Mes Projets Pro !</a>
-                  <a href="realisation.html" class="navig url"> Mes Projets Perso !</a>     
-		</nav>
+                  <a href="realisation.html" class="navig url"> Mes Projets Perso !</a> 
+    </nav>
     </header>
     <h1> 
         Le petit guide du Fablab
@@ -23,25 +23,41 @@
 Un guide sur le Fablab des Gobelins réalisé avec Illustrator.
     </h2>
 
-
-
-<div class="conteuneur_livre">
-  <div class="book-container">
-    <div class="book" id="book">
-
-      <div class="page-stack" id="staticPages"></div>
-      <!-- La page qui tourne sera rajoutée dynamiquement -->
+<div class="grille">
+        <div class="image-container" onclick="openModal(this)">
+        <img src="image/guide/mockup_book_open.webp" alt="Le guide" >
+    </div>
+       <div class="image-container" onclick="openModal(this)">
+        <img src="image/guide/book-mockup.webp" alt="Le guide ouvert">
     </div>
 
-  </div>
-  </div>
-  <div id="bouton">
-                  <button id="prev-btn">⟸ Précédent</button>
-    <button id="next-btn">Suivant ⟹</button>
 
 </div>
 
 
+<div class="modal"  onclick="closeModal()">
+    <img class="modal-image" src="">
+</div>
+
+<div class="mon_texte">
+    <p>Avec le livret créer via Indesign.
+    </p>
+</div>
+
+<div class="conteuneur_livre">
+  <div class="book-container">
+    <button id="prev-btn">⟸ Précédent</button>
+    <button id="next-btn">Suivant ⟹</button>
+    <div class="book" id="book">
+      <div class="page-stack" id="staticPages"></div>
+      <!-- La page qui tourne sera rajoutée dynamiquement -->
+    </div>
+  </div>
+  </div>
+
+
+
+<script src="javascript/open_modal.js"></script>
 <script src="javascript/livre_guide.js"></script>
 
 <footer id="footer"> © Créer par Perrine Goget. 
@@ -50,4 +66,4 @@ Un guide sur le Fablab des Gobelins réalisé avec Illustrator.
     </a> 
 </footer>
   </body>
-</html> 
+</html>

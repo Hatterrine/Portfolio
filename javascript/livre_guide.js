@@ -1,20 +1,20 @@
    // Remplace ces chemins par tes vraies images !
     const pages = [
-      'image/guide/guide_00.jpg',
-      'image/guide/guide_01.jpg',
-      'image/guide/guide_02.jpg',
-      'image/guide/guide_03.jpg',
-      'image/guide/guide_04.jpg',
-      'image/guide/guide_05.jpg',
-      'image/guide/guide_06.jpg',
-      'image/guide/guide_07.jpg',
-      'image/guide/guide_08.jpg',
-      'image/guide/guide_09.jpg',
-      'image/guide/guide_10.jpg',
-      'image/guide/guide_11.jpg',
-      'image/guide/guide_12.jpg',
-      'image/guide/guide_13.jpg',
-      'image/guide/guide_14.jpg'
+      'image/guide/guide_00.webp',
+      'image/guide/guide_01.webp',
+      'image/guide/guide_02.webp',
+      'image/guide/guide_03.webp',
+      'image/guide/guide_04.webp',
+      'image/guide/guide_05.webp',
+      'image/guide/guide_06.webp',
+      'image/guide/guide_07.webp',
+      'image/guide/guide_08.webp',
+      'image/guide/guide_09.webp',
+      'image/guide/guide_10.webp',
+      'image/guide/guide_11.webp',
+      'image/guide/guide_12.webp',
+      'image/guide/guide_13.webp',
+      'image/guide/guide_14.webp'
     ];
 
     // Indices pour le flipbook (page seule, paires, page seule)
