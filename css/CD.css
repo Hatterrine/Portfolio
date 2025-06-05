@@ -15,6 +15,9 @@
 
 body {
     background-color: rgb(251 248 255);
+    width: 100vw;        /* ← Ajoute ça pour être sûr */
+    box-sizing: border-box;
+    overflow-x: hidden;  /* ← Prévient le scroll horizontal si tu utilises 100vw */
 
 
 }/*Pour le corps je mes la couleurs de font*/
@@ -128,7 +131,7 @@ p {
     padding-top: 2rem;
     padding-left: 10rem;
     padding-right: 10rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 /**********************************************************************************/
 /*                  IV La grille des pages                                        */
@@ -231,9 +234,24 @@ video {
 /**********************************************************************************/
 
 
-#footer{
+
+#footer_perrine{
+     
+     background-color: rgb(11 12 74) ;
+    margin-top: 40vh;
+    padding-left:10px ;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+ }
+
+#footer_projet{
  background-color: rgb(11 12 74);
-    margin-top: 20vh;
+    margin-top: auto;
     padding-left: 10px;
     padding-top: 10px;
     display: flex;
@@ -243,6 +261,8 @@ video {
     font-size: 1.5em;
     color: white;
     font-weight: bold;
+    width: 100vw; /* ou 100% */
+    box-sizing: border-box;
 }
 
 
