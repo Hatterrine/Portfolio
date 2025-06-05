@@ -1,13 +1,13 @@
  // Remplace ces chemins par tes vraies images !
     const pages = [
-      'image/CD/PAGE_1.png', // Couverture (page 1) - droite seule au début
-      'image/CD/PAGE_2.png', // Page 2 (gauche)
-      'image/CD/PAGE_3.png', // Page 3 (droite)
-      'image/CD/PAGE_4.png', // Page 4 (gauche)
-      'image/CD/PAGE_5.png', // Page 5 (gauche)
-      'image/CD/PAGE_6.png', // Page 6 (gauche)
-      'image/CD/PAGE_7.png', // Page 7 (gauche)
-      'image/CD/PAGE_8.png'  // Quatrième de couverture (gauche seule à la fin)
+      'image/CD/PAGE_1.webp', // Couverture (page 1) - droite seule au début
+      'image/CD/PAGE_2.webp', // Page 2 (gauche)
+      'image/CD/PAGE_3.webp', // Page 3 (droite)
+      'image/CD/PAGE_4.webp', // Page 4 (gauche)
+      'image/CD/PAGE_5.webp', // Page 5 (gauche)
+      'image/CD/PAGE_6.webp', // Page 6 (gauche)
+      'image/CD/PAGE_7.webp', // Page 7 (gauche)
+      'image/CD/PAGE_8.webp'  // Quatrième de couverture (gauche seule à la fin)
     ];
 
       // Les indices de "double page" sont : [1,2], [3,4], [5,6]
