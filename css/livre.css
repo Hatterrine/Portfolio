@@ -1,5 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 .conteuneur_livre {
-     min-height: 100vh;
+     min-height: unset;
       display: flex;
       align-items: center;
       justify-content: center;
