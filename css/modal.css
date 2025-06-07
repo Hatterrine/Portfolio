@@ -21,6 +21,13 @@
         } 
 
 
+        img.photoshop_img:not(.i) {
+
+            width: 350px !important;
+            height: 460px !important;
+        }
+
+
         img:not(.i) {
             width: 400px;
             height: auto;
@@ -29,9 +36,6 @@
             object-fit: cover;
             aspect-ratio: 1/1;
         }
-
-
-
 
 
      
