@@ -81,6 +81,7 @@ nav {
 .row {
   display: flex;
   gap: 20px; /* espace entre les colonnes */
+  overflow: visible;
 }
 
 .col {
@@ -97,6 +98,7 @@ nav {
 
 .collone_photos{
     width: 25%;
+    overflow: visible;
 }
 
 /**********************************************************************************/
@@ -132,7 +134,8 @@ nav {
 }
 
 .photoperrine{
-    height: 398px;
+    max-width: 70%;
+    height: auto;
     shape-outside: border-box;
     transition: transform 0.3s ease-in-out;
 }
