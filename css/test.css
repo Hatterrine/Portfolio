@@ -51,9 +51,8 @@ nav {
     height:3rem;
     display: inline;
     scroll-padding-bottom: 0px;
-    margin: 50px 0px 0px 0px;
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
 }/* Dans les balises de class navig ()   */
@@ -75,7 +74,9 @@ nav {
     color : rgb(40, 27, 53);
 } 
 
-
+.conteneur_page {
+    padding-top: 50px;
+}
 
 
 /**********************************************************************************/

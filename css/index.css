@@ -51,9 +51,8 @@ nav {
     height:3rem;
     display: inline;
     scroll-padding-bottom: 0px;
-    margin: 50px 0px 0px 0px;
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 3em;
+    font-size: 1.5rem;
     color: white;
     font-weight: bold;
 }/* Dans les balises de class navig ()   */
@@ -75,8 +74,30 @@ nav {
     color : rgb(40, 27, 53);
 } 
 
+.conteneur_page {
+    padding-top: 50px;
+}
 
+.row {
+  display: flex;
+  gap: 20px; /* espace entre les colonnes */
+}
 
+.col {
+  flex: 1; /* chaque colonne prend 50% de l'espace */
+      padding-top: 30px;
+    padding-right: 60px;
+
+    font-size: 30px;
+}
+
+.col p {
+    padding-top: 20px;
+}
+
+.collone_photos{
+    width: 25%;
+}
 
 /**********************************************************************************/
 /* III La Div avec la photo et le texte qui suis-je sur la page de perrine goget. */
@@ -86,12 +107,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(215 215 255);
-    height: 350px;
-    width: 360px;
-    padding: 70px;
-    margin: 90px;
-    border-radius: 30%;
+    margin-left: 50px;
     
 }
 
@@ -100,17 +116,13 @@ nav {
     transform: scale(1.1);
 }
 
-.dive {
-    shape-outside: border-box;
-    transition: transform 0.3s ease-in-out;
-}
 
 
 #link {
     max-width: 700px;
     top: 200px;
     left: 400px;
-    font-size: 35px;
+    font-size: 30px;
     color: rgb(40, 27, 53);
 
 }
@@ -121,20 +133,10 @@ nav {
 
 .photoperrine{
     height: 398px;
-    border-radius: 55px;
+    shape-outside: border-box;
+    transition: transform 0.3s ease-in-out;
 }
 
-#quis {
-    margin-left: 20px;
-    position: static;
-    display: inline-flex;
-    font-size: 26px;
-
-}
-
-#quis {
-    transform: scale(1.1);
-}
 
 
 /**********************************************************************************/
@@ -149,93 +151,6 @@ h1 {
     font-size: 70px;
     color: rgb(48, 11, 97);
 }
-
-#page_projet {
-    position: flex;
-    left: 1350px;
-}
-
-
-.presentationp1 {
-    max-width: 700px;
-    position: absolute;
-    top: 200px;
-    left: 400px;
-    font-size: 50px;
-    top: 500px;
-    left: 650px;
-    font-size: 35px;
-}
-
-
-
-/**********************************************************************************/
-/*                  V La grille de la page des projets                            */
-/**********************************************************************************/
-
-
-
-    .container {
-    box-sizing: border-box;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 60px 40px 40px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .card {
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-      cursor: pointer;
-    }
-
-    .card img {
-      width: 100%;
-      height: auto;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .card:hover img {
-      transform: scale(1.1);
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.55);
-      color: white;
-      opacity: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      transition: opacity 0.4s ease;
-    }
-
-    .card:hover .overlay {
-      opacity: 1;
-    }
-
-    .overlay h3 {
-        font-family: "Montserrat", Arial, sans-serif;
-      font-size: 3rem;
-      font-weight: black;
-      font-style: italic;
-      text-align: center;
-      margin-right: 50px;
-      margin-top: -40px;
-    }
 
 
 
@@ -263,16 +178,8 @@ h1 {
   letter-spacing: 1px;
   backdrop-filter: blur(2px);
 }
-.banner-icon {
-  font-size: 1.7em;
-  animation: rotateTool 1.6s infinite linear;
-  display: inline-block;
-  filter: drop-shadow(0 0 4px #6dd5fa55);
-}
-.banner-text {
-  animation: textGlow 2s infinite alternate;
-  text-shadow: 0 2px 8px #1e3c7290;
-}
+
+
 @keyframes fadeInDown {
   from {
     transform: translateY(-40px);
@@ -298,9 +205,6 @@ h1 {
     padding: 10px 0;
     gap: 10px;
   }
-  .banner-icon {
-    font-size: 1.3em;
-  }
 }
 
 
@@ -309,19 +213,6 @@ h1 {
 /**********************************************************************************/
 /*                                   VII Le footer                                */
 /**********************************************************************************/
-#footer_perrine{
-     
-     background-color: rgb(11 12 74) ;
-    margin-top: 40vh;
-    padding-left:10px ;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 3em;
-    color: white;
-    font-weight: bold;
- }
 
 #footer_projet{
  background-color: rgb(11 12 74);
