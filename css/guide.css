@@ -288,31 +288,27 @@ video {
 /*                                   VI Le footer                                 */
 /**********************************************************************************/
 
-
-#footer{
- background-color: rgb(11 12 74);
-    margin-top: 20vh;
-    padding-left: 10px;
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 1.5em;
-    color: white;
-    font-weight: bold;
+#footer {
+  background-color: rgb(11, 12, 74);
+  margin-top: 5vh;
+  padding: 1.2em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1em;
+  color: white;
+  font-weight: bold;
+  width: 100%;
 }
-
-
-
 #linki {
-width: 50px;
-min-width: 3%;
-background-color: white;
-border-radius: 10px;
-margin-left: 1rem
+  width: 38px;
+  min-width: 3%;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 1rem;
 }
-
 
 
 
@@ -328,8 +324,28 @@ margin-left: 1rem
 
 
 /**********************************************************************************/
-/*                                  VIII Livre                           */
+/*                         MEdia queries pour responsive                          */
 /**********************************************************************************/
 
+/* ----- MEDIA QUERIES POUR LE RESTE DU SITE (hors livre) ----- */
+@media (max-width: 900px) {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.2em; }
+  .mon_texte { font-size: 1.1em; }
+  .navig { font-size: 1em; padding: 14px 4px; }
+  #footer { font-size: 0.95em; }
+}
 
+@media (max-width: 600px) {
+  nav { flex-direction: column; gap: 0.2em; }
+  .navig { font-size: 0.98em; min-width: 60px; padding: 8px; }
+  h1 { font-size: 1em; margin: 1.2em 0 0.7em 0; }
+  h2 { font-size: 0.95em; }
+  .mon_texte { font-size: 0.98em; padding: 0.5em; }
+  #footer { font-size: 0.8em; flex-direction: column; gap: 0.4em; }
+  #linki { width: 24px; margin-left: 0; }
+  .grille { flex-direction: column; }
+  img:not(.i) { width: 94vw; max-width: 96vw; }
+  .modal img { width: 98vw; max-width: 98vw; }
+}
 
