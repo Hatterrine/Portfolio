@@ -122,7 +122,7 @@ nav {
 }
 @media (max-width: 600px) {
     .banner-construction {
-        font-size: 0.96em;
+        font-size: 0.96rem;
         padding: 10px 0;
         gap: 10px;
     }
