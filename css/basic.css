@@ -148,6 +148,28 @@ h2 {
 }
 
 
+@media (max-width: 900px) {
+  h1 { font-size: 2em; margin: 2em 0 1em 0; }
+  h2 { font-size: 1.2em; }
+  p  { font-size: 1.2em; min-width: 0; }
+  .mon_texte { font-size: 1.1em; }
+  .navig { font-size: 1em; padding: 14px 4px; }
+  nav { height: auto; min-height: 4rem; }
+  #footer_projet { font-size: 1em; }
+  #linki { width: 36px; }
+}
+
+@media (max-width: 600px) {
+  nav { flex-direction: column; gap: 0.2em; height: auto; }
+  .navig { font-size: 0.95em; min-width: 60px; padding: 8px; }
+  h1 { font-size: 1em; margin: 1.2em 0 0.7em 0; }
+  h2 { font-size: 0.95em; }
+  p { font-size: 1em; min-width: 0; }
+  .mon_texte { font-size: 0.98em; padding: 0.5em; }
+  #footer_projet { font-size: 0.8em; flex-direction: column; gap: 0.4em; }
+  #linki { width: 24px; margin-left: 0; }
+}
+
 p {
     display: block;
     margin-block-start: 1em;
