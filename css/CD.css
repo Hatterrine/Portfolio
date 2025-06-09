@@ -126,9 +126,9 @@ nav {
 /**********************************************************************************/
 
 h1 {
-    margin: 100px;
+    margin: 5vh;
     text-align: center;
-    font-size: 70px;
+    font-size: 4rem;
     color: rgb(48, 11, 97);
     font-family: "Montserrat",  Arial, sans-serif;
 }
