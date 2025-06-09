@@ -263,25 +263,7 @@ p {
 
 
 
-.videos{
-  display: flex;
-  justify-content: center;
-}
 
-video { 
-    max-width: 50rem;
-    margin: 10px;
- }
-
- .parent{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
- }
-
- 
 
 /**********************************************************************************/
 /*                                   VI Le footer                                 */
