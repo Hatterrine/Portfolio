@@ -43,6 +43,17 @@ nav {
 
 .navig{
     background-color: rgba(238,250,252,0.6);
+    padding: 30px;
+    height:3rem;
+    display: inline;
+    scroll-padding-bottom: 0px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+/*.navig{
+    background-color: rgba(238,250,252,0.6);
     padding: 40px;
     padding-bottom: 50px;
     height:3rem;
