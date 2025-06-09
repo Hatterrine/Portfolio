@@ -15,9 +15,9 @@
 
 body {
     background-color: rgb(251 248 255);
-    width: 100vw;        /* ← Ajoute ça pour être sûr */
-    box-sizing: border-box;
-    overflow-x: hidden;  /* ← Prévient le scroll horizontal si tu utilises 100vw */
+    /* ← width: 100vw;       
+      box-sizing: border-box;
+    overflow-x: hidden;  Prévient le scroll horizontal si tu utilises 100vw */
 
 
 }/*Pour le corps je mes la couleurs de font*/
