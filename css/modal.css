@@ -3,7 +3,7 @@
 /*                  IV La grille des pages                                        */
 /**********************************************************************************/
 
-.grille {
+.grille {   
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
