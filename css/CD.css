@@ -293,7 +293,7 @@ video {
 
 #footer_projet{
  background-color: rgb(11 12 74);
-    margin-top: auto;
+    margin-top: 20vh;
     padding-left: 10px;
     padding-top: 10px;
     display: flex;
@@ -303,8 +303,6 @@ video {
     font-size: 1.5em;
     color: white;
     font-weight: bold;
-    width: 100vw; /* ou 100% */
-    box-sizing: border-box;
 }
 
 
