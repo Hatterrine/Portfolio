@@ -266,7 +266,7 @@ p {
 
 #footer_projet{
  background-color: rgb(11 12 74);
-    margin-top: 20vh;
+    margin-top: auto;
     padding-left: 10px;
     padding-top: 10px;
     display: flex;
