@@ -126,7 +126,7 @@ nav {
 /**********************************************************************************/
 
 h1 {
-    margin: 100px 0px 100px 0px;
+    margin: 100px;
     text-align: center;
     font-size: 70px;
     color: rgb(48, 11, 97);
@@ -289,19 +289,7 @@ video {
 
 
 
-#footer_perrine{
-     
-     background-color: rgb(11 12 74) ;
-    margin-top: 40vh;
-    padding-left:10px ;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 3em;
-    color: white;
-    font-weight: bold;
- }
+
 
 #footer_projet{
  background-color: rgb(11 12 74);
@@ -329,23 +317,6 @@ border-radius: 10px;
 margin-left: 1rem
 }
 
-
-
-
-/**********************************************************************************/
-/*                                  VII barre de scroll                           */
-/**********************************************************************************/
-
-
-.scrolldiv {
-    position : fixed ;
-}
-
-
-
-/**********************************************************************************/
-/*                                  VIII Livre                           */
-/**********************************************************************************/
 
 
 
