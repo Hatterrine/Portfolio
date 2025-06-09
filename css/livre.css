@@ -170,6 +170,7 @@ body {
         #next-btn { right: -60px; }
       }
     }
+    /*
     @media (max-width: 480px) {
       .book-container {
         min-height: 90px;
@@ -186,3 +187,4 @@ body {
         padding: 5px 5px;
       }
     }
+    */
