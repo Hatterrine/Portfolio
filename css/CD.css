@@ -52,18 +52,6 @@ nav {
     color: white;
     font-weight: bold;
 }
-/*.navig{
-    background-color: rgba(238,250,252,0.6);
-    padding: 40px;
-    padding-bottom: 50px;
-    height:3rem;
-    display: inline;
-    scroll-padding-bottom: 0px;
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 1.9rem;
-    color: white;
-    font-weight: bold;
-}/* Dans les balises de class navig ()   */
 
 .url {
     text-decoration: none;
@@ -103,17 +91,7 @@ nav {
     backdrop-filter: blur(2px);
 }
 
-.banner-icon {
-    font-size: 1.7em;
-    animation: rotateTool 1.6s infinite linear;
-    display: inline-block;
-    filter: drop-shadow(0 0 4px #6dd5fa55);
-}
 
-.banner-text {
-    animation: textGlow 2s infinite alternate;
-    text-shadow: 0 2px 8px #1e3c7290;
-}
 
 @keyframes fadeInDown {
     from {
@@ -139,9 +117,6 @@ nav {
         font-size: 0.96em;
         padding: 10px 0;
         gap: 10px;
-    }
-    .banner-icon {
-        font-size: 1.3em;
     }
 }
 
