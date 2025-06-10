@@ -133,7 +133,7 @@ nav {
 
 h1 {
     font-family: 'Montserrat', Arial, sans-serif;
-    margin: 100px;
+    margin: 150px;
     text-align: center;
     font-size: 70px;
     color: rgb(48, 11, 97);
@@ -181,6 +181,7 @@ p {
     text-align: center;
     font-family: "Montserrat",  Arial, sans-serif;
     min-width : 60vh;
+    padding: 5rem;
 }
 
 div.mon_texte {
