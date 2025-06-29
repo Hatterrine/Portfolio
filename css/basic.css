@@ -199,7 +199,10 @@ div.mon_texte {
 .gauche {
     display:flex;
     align-items: self-start;
-    padding : 15rem; 
+    padding-top: 5rem;
+    padding-left: 15rem; 
+    padding-bottom: 5rem; 
+    padding-right: 15rem; 
 }
 
 .gauchiste {
@@ -208,6 +211,17 @@ div.mon_texte {
 }
 
 
+.droite {
+        display:flex;
+    align-items: self-start;
+    padding-left: 15rem; 
+    padding-right: 15rem; 
+    padding-bottom: 5rem; 
+}
+
+#legume {
+    height: 35rem;
+}
 
 /**********************************************************************************/
 /*                                   VII Le footer                                 */
