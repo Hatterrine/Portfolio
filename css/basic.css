@@ -196,8 +196,21 @@ div.mon_texte {
 }
 
 
+.gauche {
+    display:flex;
+    align-items: self-start;
+    padding : 15rem; 
+}
+
+.gauchiste {
+    padding-top: 0px;
+    text-align: left;
+}
+
+
+
 /**********************************************************************************/
-/*                                   VI Le footer                                 */
+/*                                   VII Le footer                                 */
 /**********************************************************************************/
 
 
