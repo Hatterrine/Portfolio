@@ -132,29 +132,99 @@ nav {
 /* III La Div avec la photo et le texte qui suis-je sur la page de perrine goget. */
 /**********************************************************************************/
 
-.row {
-  display: flex;
-  gap: 20px; /* espace entre les colonnes */
-  overflow: visible;
+.le_corps {
+
+      min-height: 70vh;
+       margin: 0;
+       padding-top: 13vh;
+       padding-bottom: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 }
 
-.col {
-  flex: 1; /* chaque colonne prend 50% de l'espace */
-      padding-top: 30px;
-    padding-right: 60px;
-
-    font-size: 30px;
-}
-
-.col p {
-    padding-top: 20px;
-}
-
-.collone_photos{
-    width: 25%;
-    overflow: visible;
-}
-
+    .carte-presentation {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background: linear-gradient(90deg, #1e3c72 10%, #2a5298 60%, #6dd5fa 100%);
+      border-radius: 28px;
+      box-shadow: 0 8px 36px rgba(125, 71, 207, 0.18), 0 2px 10px rgba(125, 71, 207, 0.09);
+      padding: 38px 52px;
+      max-width: 90rem;
+      border: 3px solid #281B35;
+      position: relative;
+      overflow: hidden;
+      gap: 38px;
+    }
+    .carte-image {
+      flex-shrink: 0;
+      width: 17rem;
+      max-width: 70vw;
+      aspect-ratio: 2/3;
+      border-radius: 22px;
+      border: 4px solid #281B35;
+      object-fit: cover;
+      box-shadow: 0 0 0 8px rgb(40 27 53 / 52%);
+      background: #eee;
+      display: block;
+       max-width: 70%;
+    height: auto;
+    shape-outside: border-box;
+    transition: transform 0.3s ease-in-out;
+    }
+    .carte-contenu {
+      flex: 1 1 0;
+      color: #7d47cf;
+      text-shadow: 0 2px 4px #19315bde;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .carte-titre {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: #281B35;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .carte-description {
+    font-size: 20px;
+    color: rgb(40, 27, 53);
+      line-height: 1.6;
+      background: rgba(255,255,255,0.80);
+      padding: 16px 26px;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px #c471f522;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    .picto-sablier {
+      position: absolute;
+      opacity: 0.8;
+      z-index: 1;
+      pointer-events: none;
+      filter: drop-shadow(0 1px 10px #d0effa);
+    }
+    .picto1 { width: 78px; height: 78px; left: -34px; top: -34px; transform: rotate(-13deg);}
+    .picto2 { width: 70px; height: 70px; right: 16px; bottom: -16px; transform: rotate(16deg);}
+    .picto3 { width: 76px; height: 76px; left: 38%; bottom: -30px; transform: rotate(-8deg);}
+    .picto4 { width: 62px; height: 62px; right: 58px; top: -24px; transform: rotate(19deg);}
+    .picto5 { width: 64px; height: 64px; left: -28px; bottom: 40px; transform: rotate(-24deg);}
+    .picto6 { width: 80px; height: 80px; right: 200px; top: 35px; transform: rotate(341deg);}
+    @media (max-width: 600px) {
+      .carte-presentation {
+        flex-direction: column;
+        padding: 16px 4vw;
+        gap: 18px;
+        max-width: 98vw;
+      }
+      .carte-image { width: 90vw; max-width: 100%; }
+    }
 #divshape {
     display: flex;
     justify-content: center;
@@ -174,7 +244,7 @@ nav {
     max-width: 700px;
     top: 200px;
     left: 400px;
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(40, 27, 53);
 
 }
@@ -183,12 +253,7 @@ nav {
     transform: scale(1.1);
 }
 
-.photoperrine{
-    max-width: 70%;
-    height: auto;
-    shape-outside: border-box;
-    transition: transform 0.3s ease-in-out;
-}
+
 
 
 
@@ -199,7 +264,7 @@ nav {
 h1 {
   font-family: 'Monsterrat', Arial, sans-serif;
 
-    margin: 100px;
+    margin-top: 100px;
     text-align: center;
     font-size: 70px;
     color: rgb(48, 11, 97);
@@ -214,14 +279,14 @@ h1 {
   * { box-sizing: border-box; }
     .corps {
       margin: 0;
-      height: 100vh;
-      background: #1a1923;
+      height: 50vh;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
       font-family: sans-serif;
       perspective: 1200px;
+      margin-bottom: 5vh;
     }
 
     .carousel-container {
@@ -279,7 +344,6 @@ h1 {
 
 #footer_projet{
  background-color: rgb(11 12 74);
-    margin-top: 20vh;
     padding-left: 10px;
     padding-top: 10px;
     display: flex;

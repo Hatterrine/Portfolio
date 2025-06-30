@@ -1,12 +1,12 @@
 const images = [
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1465101178521-c1a9136a3cd7?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80",
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80"
+      "image/index/bijoux_montre.png",
+      "image/index/mac.png",
+      "image/index/ordi_1.png",
+      "image/index/influenceur_site_3.png",
+      "image/index/mockup_7.png",
+      "image/index/dess_im_jane.jpg",
+      "image/index/mokup_carte_quikit_base.png",
+      "image/index/poster_2.png"
     ];
 
     const track = document.querySelector('.carousel-track');
