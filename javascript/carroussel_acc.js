@@ -21,7 +21,7 @@ const images = [
       track.innerHTML = '';
       slides = [];
 
-      const slideWidth = Math.min(220, window.innerWidth / visibleCount - 16);
+      const slideWidth = Math.min(320, window.innerWidth / visibleCount - 16);
       const radius = (slideWidth / 2) / Math.tan(Math.PI / images.length) + 100;
 
       images.forEach((src, i) => {
