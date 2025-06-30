@@ -151,14 +151,16 @@ nav {
       border-radius: 28px;
       box-shadow: 0 8px 36px rgba(125, 71, 207, 0.18), 0 2px 10px rgba(125, 71, 207, 0.09);
       padding: 38px 52px;
-      max-width: 90rem;
+      max-width: 110rem;
       border: 3px solid #281B35;
       position: relative;
       overflow: hidden;
       gap: 38px;
+      width:110rem;
+      height: 40rem;
     }
 
-    
+
     .carte-image {
       flex-shrink: 0;
       width: 17rem;
