@@ -157,6 +157,24 @@ nav {
       overflow: hidden;
       gap: 38px;
     }
+
+    @media (max-width: 1200px) {
+  .carte-presentation { max-width: 98vw; padding: 22px 3vw; }
+}
+@media (max-width: 900px) {
+  .carte-presentation { gap: 18px; }
+  .carte-image { width: 36vw; min-width: 100px; }
+}
+@media (max-width: 600px) {
+  .le_corps { padding-top: 6vh; }
+  .carte-presentation {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 3vw;
+    gap: 10px;
+    max-width: 98vw;
+
+    
     .carte-image {
       flex-shrink: 0;
       width: 17rem;
