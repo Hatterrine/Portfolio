@@ -280,7 +280,6 @@ h1 {
 /**********************************************************************************/
 
 
-  * { box-sizing: border-box; }
     .corps {
       margin: 0;
       height: 100vh;
@@ -290,7 +289,6 @@ h1 {
       overflow: hidden;
       font-family: sans-serif;
       perspective: 1200px;
-      margin-bottom: 5vh;
     }
 
     .carousel-container {
@@ -334,7 +332,6 @@ h1 {
         height: 240px;
       }
     }
-
 
 
 
