@@ -168,7 +168,7 @@ p {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     font-size: 35px;
-    text-align: center;
+    text-align: left;
     font-family: "Montserrat",  Arial, sans-serif;
     min-width : 60vh;
 }
