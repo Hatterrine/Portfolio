@@ -184,6 +184,11 @@ p {
     padding: 5rem;
 }
 
+.center {
+    text-align: left;
+}
+
+
 div.mon_texte {
     padding-top: 2rem;
 }
@@ -208,6 +213,11 @@ div.mon_texte {
 .gauchiste {
     padding-top: 0px;
     text-align: left;
+    padding-right:5rem;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    min-width : 60vh;
+    max-width : 80vh;
 }
 
 
@@ -217,6 +227,17 @@ div.mon_texte {
     padding-left: 15rem; 
     padding-right: 15rem; 
     padding-bottom: 5rem; 
+}
+
+
+.droitiste {
+    padding-top: 0px;
+    text-align: left;
+    padding-right:0px;
+    padding-left: 5rem;
+    padding-bottom: 0px;
+    min-width : 60vh;
+    max-width : 80vh;
 }
 
 #legume {
