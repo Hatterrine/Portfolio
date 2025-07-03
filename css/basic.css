@@ -198,7 +198,7 @@ div.mon_texte {
 
 .gauche {
     display:flex;
-    align-items: self-start;
+    align-items: center;
     padding-top: 5rem;
     padding-left: 15rem; 
     padding-bottom: 5rem; 
@@ -213,7 +213,7 @@ div.mon_texte {
 
 .droite {
         display:flex;
-    align-items: self-start;
+    align-items: center;
     padding-left: 15rem; 
     padding-right: 15rem; 
     padding-bottom: 5rem; 
