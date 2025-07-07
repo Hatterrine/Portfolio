@@ -185,6 +185,7 @@ nav {
       justify-content: center;
     }
     .carte-titre {
+      font-family: 'Monsterrat', Arial, sans-serif;
       font-size: 3rem;
       font-weight: 700;
       margin-bottom: 14px;
