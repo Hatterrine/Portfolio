@@ -178,7 +178,7 @@ nav {
     .carte-contenu {
       flex: 1 1 0;
       color: #7d47cf;
-      text-shadow: 0 2px 4px #19315bde;
+      text-shadow: 0 2px 4px #ffffffde;
       min-width: 0;
       display: flex;
       flex-direction: column;
@@ -190,7 +190,7 @@ nav {
       margin-bottom: 14px;
       letter-spacing: 1px;
       text-transform: uppercase;
-      background: #281B35;
+      background: #ffffff;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
