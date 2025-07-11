@@ -197,14 +197,16 @@ nav {
     }
     .carte-description {
     font-size: 25px;
-    color: rgb(40, 27, 53);
+    color:white;
+    /*color: rgb(40, 27, 53);*/
       line-height: 1.6;
-      background: rgba(255,255,255,0.80);
+      /*background: rgba(255,255,255,0.80);*/
       padding: 16px 26px;
       border-radius: 14px;
-      box-shadow: 0 2px 12px #c471f522;
+      /*box-shadow: 0 2px 12px #c471f522;*/
       margin-top: 10px;
       display: inline-block;
+      text-shadow: none;
     }
     .picto-sablier {
       position: absolute;
@@ -248,7 +250,8 @@ nav {
     top: 200px;
     left: 400px;
     font-size: 25px;
-    color: rgb(40, 27, 53);
+    /*color: rgb(40, 27, 53);*/
+    color: white;
 
 }
 
