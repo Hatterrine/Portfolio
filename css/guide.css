@@ -281,27 +281,34 @@ video {
 /*                                   VI Le footer                                 */
 /**********************************************************************************/
 
-#footer {
-  background-color: rgb(11, 12, 74);
-  margin-top: 5vh;
-  padding: 1.2em 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1.1em;
-  color: white;
-  font-weight: bold;
-  width: 100%;
+
+
+#footer_projet{
+ background-color: rgb(11 12 74);
+    margin-top: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: 'Montserrat',  Arial, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    width: 100vw; /* ou 100% */
+    box-sizing: border-box;
 }
+
+
+
 #linki {
-  width: 38px;
-  min-width: 3%;
-  background-color: white;
-  border-radius: 10px;
-  margin-left: 1rem;
+width: 50px;
+min-width: 3%;
+background-color: white;
+border-radius: 10px;
+margin-left: 1rem
 }
+
 
 
 
