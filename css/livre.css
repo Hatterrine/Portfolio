@@ -131,8 +131,10 @@ body {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background: #fff6dd;
-      border: 1px solid #c8b87b;
+      background: #0b0e4a;
+      color: white;
+      font-family: 'Montserrat', Arial, sans-serif;
+      border: 1px solid #fbfbfb;
       border-radius: 4px;
       padding: 10px 22px;
       font-size: 1.2rem;
