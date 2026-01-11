@@ -39,13 +39,15 @@ nav {
 
 .navig{
     background-color: rgba(238,250,252,0.6);
-    padding: 40px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
     height:3rem;
     display: inline;
     scroll-padding-bottom: 0px;
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     color: white;
     font-weight: bold;
 }/* Dans les balises de class navig ()   */
