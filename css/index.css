@@ -139,11 +139,13 @@ nav {
 
       min-height: 70vh;
        margin: 0;
-       padding-top: 13vh;
+       padding-top: 2vh;
        padding-bottom: 5vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding : 8vw;
+   
 }
 
     .carte-presentation {
@@ -282,69 +284,115 @@ h1 {
 
 
 /**********************************************************************************/
-/*                                VI Le carroussel                                */
+/*                       VI Page des nouveau projets                              */
 /**********************************************************************************/
 
 
     .corps {
       margin: 0;
-      height: 50vh;
+      /*height: 50vh;*/
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
       font-family: sans-serif;
       perspective: 1200px;
+      padding-top: 20vh;
+      padding-left: 10vw;
+      padding-right: 10vw;
     }
 
-    .carousel-container {
-      width: 100vw;
-      max-width: 1200px;
-      height: 360px;
-      position: relative;
-      transform-style: preserve-3d;
+    .section-new-elt {
+          display: grid;
+          gap : 18px
     }
 
-    .carousel-track {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      transform-style: preserve-3d;
-    }
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+    align-items: stretch;
+    overflow: hidden;
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.04);
+    border-radius: 28px;
+}
 
-    .carousel-slide {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform-style: preserve-3d;
-      transform-origin: center center;
-      background: #fff;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-      backface-visibility: hidden;
-      transition: transform 0.8s ease;
-    }
+.card--img-left {
+    grid-template-areas: "img content";
+}
 
-    .carousel-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+.card--img-right{ grid-template-areas: "content img"; }
 
-    @media (max-width: 768px) {
-      .carousel-container {
-        height: 240px;
-      }
-    }
+.card-img{
+  grid-area: img;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
 
+.card-body{
+  padding: 2rem !important;
+  padding-top: 4rem !important;
+  grid-area: content;
+  padding:var(--card-padding);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start; /* titre en haut */
+  gap:12px;
+  min-width:0;
+  position:relative;
+}
 
+.card-actions {
+    margin-top: 110px;
+    display: flex
+;
+    justify-content: flex-end;
+    gap: 10px;
+    align-content: flex-end;
+    flex-direction: row;
+}
+.card-btn {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    width: 100px;
+          color: rgb(48, 11, 97);
+    font-family: "Montserrat", Arial, sans-serif;
+    text-align: center;
 
+}
 
+.card-title {
+  padding-bottom: 3vh;
+      color: rgb(48, 11, 97);
+    font-family: "Montserrat", Arial, sans-serif;
 
+}
 
+.card-desc{
+  font-family: "Montserrat", Arial, sans-serif;
+}
 
+.divimage {
+  max-width: max-content;
+  min-width:  20vw;
+  max-height: 30vw;
+      display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 12px;
+    min-width: 0;
+    position: relative;
+        object-position: center;
+
+}
 /**********************************************************************************/
 /*                                   VII Le footer                                */
 /**********************************************************************************/
