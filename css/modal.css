@@ -38,7 +38,10 @@
         }
 
 
-     
+.rectangle {
+    aspect-ratio: 16/9 !important;
+    width: 700px !important;
+}
 
 
         img:hover:not(.i) {
